@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <title>body</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    screens: {
+                        sm: '992px',
+                        md: '1140px',
+                        lg: '1140px',
+                        xl: '1140px',
+                        '2xl': '1140px',
+                    },
+                },
+                extend: {
+                    colors: {
+                        yellowGreen: '#5CD93D',
+                        lemonLime: '#D2F038',
+                        pacificBlue: '#00AFB5',
+                        Ocean: '#097980',
+                    },
+                    fontSize: {
+                        xxl: '120px',
+                    },
+                    maxWidth: {
+                        '2xl': '640px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="bg-Ocean">
+        <div>
+            <div class="text-center">
+                <p class="text_300_30 text-white">Increase traffic. Generate more leads.</p>
+                <h2 class="text_700_80 text-white">Book more jobs</h2>
+                <p class="max-w-2xl mx-auto">Venveo has been the go-to marketing partner for home services businesses
+                    for over
+                    20 years.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
