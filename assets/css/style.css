@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "MaisonNeueMedium";
+  src: url("/assets/fonts/MaisonNeue/MaisonNeue-Medium.otf");
+}
+@font-face {
+  font-family: "MaisonNeueLight";
+  src: url("/assets/fonts/MaisonNeue/MaisonNeue-Light.otf");
+}
+@font-face {
+  font-family: "MaisonNeueNormal";
+  src: url("/assets/fonts/MaisonNeue/MaisonNeue-Demi.otf");
+}
+@font-face {
+  font-family: "SöhneSchmal";
+  src: url(../fonts/TestSöhneSchmal/TestSöhneSchmal-Buch.otf);
+}
+/* common class */
+.text_400_15 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+}
+.text_700_80 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 87.5%;
+}
+.text_300_30 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 100%;
+}
+.text_300_15 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 200%;
+}
+.text_400_13 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 153%;
+}
+.text_500_12 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 108%;
+}
+.text_700_50 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 88%;
+}
+.text_600_15 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.text_300_20 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 180%;
+}
+.text_300_40 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+}
+.text_400_13 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 153%;
+}
+.text_400_15 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 166%;
+}
+@media (max-width: 992px) {
+}
