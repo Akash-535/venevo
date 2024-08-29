@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/hero-section.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Venveo</title>
     <script>
         tailwind.config = {
@@ -39,13 +38,28 @@
 
 <body>
     <section>
-        <div class="flex items-center ml-12">
-            <a class="translate-y-8" href="#">
+        <div class="flex items-center justify-between  ">
+            <a class="translate-y-8 ml-12" href="#">
                 <img src="./assets/images/svg/Venveologo.svg" alt="Logo">
             </a>
-            <div class="flex ml-auto items-center">
-                <div class="flex items-center gap-10">
-                    <ul class="flex flex-row gap-10">
+            <div onclick="navmanu()" class="hidden relative mr-12 z-20  ml-auto max-lg:block">
+                <svg id="navclick" class=" transition-all duration-700" width="40" height="40" viewBox="0 0 40 40"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.5566 14L4.44394 14" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M35.5566 26L4.44394 26" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+                <svg id="show" class="hidden transition-all duration-500 " width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L23 23" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M23 1L0.999999 23" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+            </div>
+            <div id="mobile-viwe"
+                class="flex ml-auto transition-all duration-700 max-lg:fixed max-lg:w-full  z-10    max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:bg-white max-lg:-top-full items-center ">
+                <div class="flex items-center   lg:flex-row flex-col gap-10">
+                    <ul class="flex  lg:flex-row flex-col items-center   gap-10">
                         <li class="list-none"><a href="#">How We Help ▼</a></li>
                         <li class="list-none"><a href="#">Who We Help ▼</a></li>
                         <li class="list-none"><a href="#">Why Venveo ▼</a></li>
@@ -74,13 +88,17 @@
                             <p class="mb-0 text-pacificBlue text_600_15">
                                 Who We Help
                             </p>
-                            <h1 class="text-xxl  leading-[86%]  SohneSchmalBold mb-0">The Best Building Materials Marketing
+                            <h1
+                                class="text-xxl max-lg:text-8xl max-md:text-7xl max-sm:text-5xl  leading-[86%]  SohneSchmalBold mb-0">
+                                The Best Building Materials
+                                Marketing
                             </h1>
-                            <p class="mb-0 MaisonNeueNormal py-11">Rank for the most lucrative keywords in your industry
+                            <p class="mb-0 MaisonNeueMonoNormal py-11">Rank for the most lucrative keywords in your
+                                industry
                                 with end-to-end SEO, from content
                                 creation to technical optimization.</p>
                             <button
-                                class="flex bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center py-8 px-8">
+                                class="flex  MaisonNeueSemibold bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center py-8 px-8">
                                 Book a Strategy Call<svg width="29" height="10" viewBox="0 0 29 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.2812 1L27.2412 4.96L23.2812 8.92" stroke="black" stroke-width="2"
@@ -93,11 +111,12 @@
                     </div>
                     <div class="lg:w-7/12 min-h-[800px] relative bg-yellowGreen pt-[71px] pl-[76px]">
                         <div>
-                            <p class="mb-0 max-w-[364px] text_300_30">“They are really aligned with how we are building
+                            <p class="mb-0 max-w-[364px] MaisonNeueLight text_300_30">“They are really aligned with how
+                                we are building
                                 the business
                                 from a strategic
                                 standpoint and from branding, messaging and cultural standpoint.”</p>
-                            <p class="mb-0 text_400_15 mt-5">Jon Vaughan,
+                            <p class="mb-0 text_400_15 MaisonNeueMonoNormal mt-5">Jon Vaughan,
                                 <span class="block"> REGIONAL VP-SE AT US LBM </span>
                             </p>
                             <svg class="mt-5" width="49" height="40" viewBox="0 0 49 40" fill="none"
@@ -127,8 +146,39 @@
                 </div>
             </div>
         </div>
+
+   
         <div><img class="w-full mt-[76px]" src="./assets/images/png/yellow-waves.png" alt="wave"></div>
+        <div class="flex-col flex-wrap lg:flex-row lg:mt-24 md:mt-20 sm:mt-16 flex">
+            <div class="lg:w-6/12 w-full">
+                <div class="relative">
+                    <img class="w-full relative z-10" src="./assets/images/png/marketing-img.avif" alt="img">
+                    <img class="absolute bottom-[-34%] lg:block hidden right-[-25%]"
+                        src="./assets/images/png/4circle.png" alt="forcricle">
+                </div>
+            </div>
+            <div class="lg:w-6/12 w-full justify-center items-center flex">
+                <div class="max-w-[433px] relative z-10  mx-auto">
+                <h1 class="text-[80px] SohneSchmalBold leading-[86%]">ALL-IN-ONE <span class="block"> MARKETING </span></h1>
+                    <p class="MaisonNeueMonoNormal text_400_15  mt-4">Transform your home service business with Venveo. Our comprehensive
+                        strategy includes a great
+                        website design, targeted advertising, engaging video and written content, and higher rankings.
+                    </p>
+                    <p class="MaisonNeueMonoNormal text_400_15 mt-6 ">
+                        With Venveo's all-in-one marketing solution, you can take your home service business to the next
+                        level.</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <script>
+        const navmanu = () => {
+            document.getElementById('mobile-viwe').classList.toggle('max-lg:top-0');
+            document.getElementById('navclick').classList.toggle('hiden-rotate');
+            document.getElementById('show').classList.toggle('show-rotate');
+            document.body.classList.toggle('overflow-hidden')
+        }
+    </script>
 </body>
 
 </html>
