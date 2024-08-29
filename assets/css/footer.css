@@ -193,3 +193,7 @@
    object-fit: cover;
    
 }
+.email_text{
+  border: none;
+  background: transparent;
+}
