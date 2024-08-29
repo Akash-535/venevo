@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/hero-section.css">
     <link rel="shortcut icon" href="./assets/images/svg/Venveologo.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Venveo</title>
     <script>
         tailwind.config = {
@@ -84,8 +85,8 @@
         </div>
         <div>
             <div>
-                <div class="flex-wrap  flex flex-col lg:flex-row">
-                    <div class="lg:w-5/12 flex items-center mx-auto pl-[4%] pr-[4%]  xl:pr-[6%] pt-14 lg:pt-0">
+                <div  class="flex-wrap  flex flex-col lg:flex-row">
+                    <div  class="lg:w-5/12 flex items-center mx-auto pl-[4%] pr-[4%]  xl:pr-[6%] pt-14 lg:pt-0">
                         <div>
                             <p class="mb-0 max-lg:px-5 text-pacificBlue text_600_15">
                                 Who We Help
@@ -108,9 +109,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="lg:w-7/12 min-h-[800px] relative bg-yellowGreen pt-[71px] pl-[76px]">
+                    <div  class="lg:w-7/12 min-h-[800px] relative bg-yellowGreen pt-[71px] pl-[76px]">
                         <div>
-                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30">“They are really
+                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30">“They
+                                are really
                                 aligned with how
                                 we are building
                                 the business
@@ -150,14 +152,14 @@
 
         <div><img class="w-full mt-[76px]" src="./assets/images/png/yellow-waves.png" alt="wave"></div>
         <div class="flex-col flex-wrap lg:flex-row lg:mt-24 md:mt-20 sm:mt-16 flex">
-            <div class="lg:w-6/12 w-full">
+            <div data-aos="flip-left" data-aos-duration="2000" class="lg:w-6/12 w-full">
                 <div class="relative">
                     <img class="w-full relative z-10" src="./assets/images/png/marketing-img.avif" alt="img">
                     <img class="absolute bottom-[-20%] lg:block hidden right-[-20%]"
                         src="./assets/images/png/4circle.png" alt="forcricle">
                 </div>
             </div>
-            <div class="lg:w-6/12 w-full relative z-40 justify-center items-center flex">
+            <div data-aos="flip-right"  class="lg:w-6/12 w-full relative z-40 justify-center items-center flex">
                 <div class="w-[433px] max-lg:w-full relative z-10  mx-auto">
                     <h1 class="text-[80px] SohneSchmalBold max-lg:px-5 leading-[86%]">ALL-IN-ONE <span class="block">
                             MARKETING
@@ -183,7 +185,8 @@
                             Make it easy for
                             <span class="block lg-unset"> your customers </span>
                         </h1>
-                        <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 ">In today's world, customers
+                        <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 ">In today's world,
+                            customers
                             expect businesses to
                             be easily reachable. Venveo lets you
                             communicate how they prefer, whether that is a call, email, chat, or just booking online.
@@ -200,6 +203,12 @@
             </div>
         </section>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+    </script>
+
     <script>
         const navmanu = () => {
             document.getElementById('mobile-viwe').classList.toggle('max-lg:top-0');
