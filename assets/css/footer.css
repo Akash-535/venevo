@@ -225,6 +225,15 @@
     font-size: 16px !important;
   }
 }
+@media (max-width:768px) {
+  .footer_links_parent{
+    display: none !important;
+  }
+  .sm_reverse_col{
+    flex-direction: column-reverse !important;
+  }
+  
+}
 @media (max-width: 576px) {
   /* font size 80 */
   .text_40 {
@@ -238,4 +247,5 @@
   .text_12 {
     font-size: 12px !important;
   }
+
 }
