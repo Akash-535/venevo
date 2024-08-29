@@ -59,12 +59,40 @@
 }
 
 @font-face {
-  font-family: "Sohne-SchmalExtraBold";
+  font-family: "SohneSchmalExtraBold";
   src: url('https://www.venveo.com/dist/fonts/sohne-schmal/sohne-schmal-fett.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-stretch: normal;
   font-display: swap;
+}
+
+.MaisonNeueBold {
+  font-family: MaisonNeueBold;
+}
+
+.MaisonNeueMedium {
+  font-family: MaisonNeueMedium;
+}
+
+.MaisonNeueLight {
+  font-family: MaisonNeueLights;
+}
+
+.MaisonNeueSemibold {
+  font-family: MaisonNeueSemibold;
+}
+
+.MaisonNeueMonoNormal {
+  font-family: MaisonNeueMonoNormal;
+}
+
+.SohneSchmalBold {
+  font-family: SohneSchmalBold;
+}
+
+.Sohne-SchmalExtraBold {
+  font-family: SohneSchmalExtraBold;
 }
 
 /* common class */
