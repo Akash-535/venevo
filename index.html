@@ -44,38 +44,40 @@
 
 <body>
     <!-- header -->
-    <section class="relative overflow-hidden pb-52">
-        <img class="absolute hidden lg:block right-[0%] top-[20%] z-30" src="./assets/images/png/bg-layer.png" alt="">
+    <section class="relative overflow-hidden lg:pb-32 pb-0">
+        <img class="absolute hidden lg:block right-[0%] top-[27%] z-30" src="./assets/images/png/bg-layer.png" alt="">
         <div class="flex items-center justify-between  ">
             <a class="translate-y-8 ml-12" href="#">
                 <img src="./assets/images/svg/Venveologo.svg" alt="Logo">
             </a>
-            <div onclick="navmanu()" class="hidden relative mr-12 z-50  ml-auto max-lg:block">
-                <svg id="navclick" class=" transition-all duration-700" width="40" height="40" viewBox="0 0 40 40"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.5566 14L4.44394 14" stroke="black" stroke-width="2" stroke-linecap="round" />
-                    <path d="M35.5566 26L4.44394 26" stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
-
-                <svg id="show" class="hidden transition-all duration-500 " width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L23 23" stroke="black" stroke-width="2" stroke-linecap="round" />
-                    <path d="M23 1L0.999999 23" stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
+            <div onclick="navMenu()"
+                class="hidden cursor-pointer    relative mr-12 z-50  h-5 justify-end flex-col   ml-auto max-lg:flex">
+                <span id="navline"
+                    class="w-10  transition-all duration-300 cursor-pointer h-0.5 bg-black flex relative after:absolute after:left-0 after:w-10 after:bg-black after:h-0.5 after:-top-5"></span>
 
             </div>
             <div id="mobile-viwe"
                 class="flex ml-auto transition-all duration-700 max-lg:fixed max-lg:w-full  z-40    max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:bg-white max-lg:-top-full items-center ">
-                <div class="flex items-center   lg:flex-row flex-col gap-10">
+                <div class="flex items-center   lg:flex-row flex-col gap-10 ">
                     <ul class="flex  lg:flex-row flex-col items-center   gap-10">
-                        <li class="list-none"><a href="#">How We Help ▼</a></li>
-                        <li class="list-none"><a href="#">Who We Help ▼</a></li>
-                        <li class="list-none"><a href="#">Why Venveo ▼</a></li>
-                        <li class="list-none"><a href="#">Resources</a></li>
-                        <li class="list-none"><a href="#"><img src="./assets/images/svg/SearchIcon.svg"
-                                    alt="secarch"></a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime   "
+                                href="#">How We Help ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime   "
+                                href="#">Who We Help ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime    "
+                                href="#">Why Venveo ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime    "
+                                href="#">Resources</a></li>
+                        <li class="list-none"><a href="#"><img
+                                    class="hover:scale-125 transition-all duration-300 hover:rotate-[360deg]"
+                                    src="./assets/images/svg/SearchIcon.svg" alt="secarch"></a></li>
                     </ul>
-                    <button class="flex bg-lemonLime  items-center gap-1 py-8 px-8">
+                    <button
+                        class="flex bg-lemonLime hover:bg-yellowGreen transition-all duration-300  items-center gap-1 py-8 px-8 text_600_15 text_12 ">
                         Let’s Talk<svg width="29" height="10" viewBox="0 0 29 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.2812 1L27.2412 4.96L23.2812 8.92" stroke="black" stroke-width="2"
@@ -92,9 +94,9 @@
             <div>
                 <div class="flex-wrap  flex flex-col lg:flex-row">
                     <div class="lg:w-5/12 flex items-center mx-auto pl-[4%] pr-[4%]  xl:pr-[6%] pt-14 lg:pt-0">
-                        <div>
-                            <p class="mb-0 max-lg:px-5 text-pacificBlue text_600_15">
-                                Who We Help
+                        <div class="max-lg:pb-5">
+                            <p class="mb-3 max-lg:px-5 text-pacificBlue text_600_15 text_12">
+                                WHO WE HELP
                             </p>
                             <h1
                                 class="text-xxl max-lg:px-5 max-lg:text-8xl max-md:text-7xl max-sm:text-5xl  leading-[86%]  SohneSchmalBold mb-0">
@@ -103,7 +105,7 @@
                             </h1>
                             <p id="Rank-text" class="mb-0 min-h-44 MaisonNeueMonoNormal max-lg:px-5 py-11"></p>
                             <button
-                                class="flex  MaisonNeueSemibold bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center max-lg:p-7 max-md:p-5 py-8 px-8">
+                                class="flex text_15_600 text_12  MaisonNeueSemibold bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center max-lg:p-7 max-md:p-5 py-8 px-8">
                                 Book a Strategy Call<svg width="29" height="10" viewBox="0 0 29 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.2812 1L27.2412 4.96L23.2812 8.92" stroke="black" stroke-width="2"
@@ -116,14 +118,16 @@
                     </div>
                     <div class="lg:w-7/12 min-h-[800px] relative bg-yellowGreen pt-[71px] pl-[76px]">
                         <div>
-                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30">“They
+                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30 text_18">
+                                “They
                                 are really
                                 aligned with how
                                 we are building
                                 the business
                                 from a strategic
                                 standpoint and from branding, messaging and cultural standpoint.”</p>
-                            <p class="mb-0 text_400_15 max-lg:px-5 MaisonNeueMonoNormal mt-5">Jon Vaughan,
+                            <p class="mb-0 text_400_15 max-lg:px-5 MaisonNeueMonoNormal mt-5 text_400_15 text_12">Jon
+                                Vaughan,
                                 <span class="block"> REGIONAL VP-SE AT US LBM </span>
                             </p>
                             <svg class="mt-5" width="49" height="40" viewBox="0 0 49 40" fill="none"
@@ -145,7 +149,7 @@
                                     fill="black" />
                             </svg>
 
-                            <img class="absolute z-40 bottom-0 right-0" src="./assets/images/png/herosection_img.png"
+                            <img class="absolute z-[39] bottom-0 right-0" src="./assets/images/png/herosection_img.png"
                                 alt="img">
                         </div>
                     </div>
@@ -155,7 +159,7 @@
         </div>
 
 
-        <div><img class="w-full mt-[76px]" src="./assets/images/png/yellow-waves.png" alt="wave"></div>
+        <div><img class=" mt-[76px]" src="./assets/images/png/yellow-waves.png" alt="wave"></div>
         <div class="flex-col flex-wrap lg:flex-row lg:mt-24 md:mt-20 sm:mt-16 flex">
             <div data-aos="flip-left" data-aos-duration="2000" class="lg:w-6/12 w-full">
                 <div class="relative">
@@ -166,10 +170,13 @@
             </div>
             <div data-aos="flip-right" class="lg:w-6/12 w-full relative z-40 justify-center items-center flex">
                 <div class="w-[433px] max-lg:w-full relative z-10  mx-auto">
-                    <h1 class="text-[80px] SohneSchmalBold max-lg:px-5 leading-[86%]">ALL-IN-ONE <span class="block">
+                    <h1
+                        class="text_700_80 text_60 text_40 SohneSchmalBold max-lg:px-5 max-lg:text-center leading-[86%]">
+                        ALL-IN-ONE <span class="block">
                             MARKETING
                         </span></h1>
-                    <p class="MaisonNeueMonoNormal max-lg:px-5 text_400_15  mt-4">Transform your home service business
+                    <p class="MaisonNeueMonoNormal max-lg:px-5 text_400_15 text_12 mt-4">Transform your home service
+                        business
                         with Venveo.
                         Our comprehensive
                         strategy includes a great
@@ -181,37 +188,39 @@
                 </div>
             </div>
         </div>
-        <section>
-            <div class="flex flex-wrap lg:mt-36 md:mt-28 sm:mt-20  lg:flex-row">
-                <div class="lg:w-6/12 last:w-full flex justify-center items-center">
-                    <div>
-                        <h1
-                            class="text-[80px] max-lg:px-5 max-lg:text-7xl max-md:text-6xl max-sm:text-5xl SohneSchmalBold leading-[86%]">
-                            Make it easy for
-                            <span class="block lg-unset"> your customers </span>
-                        </h1>
-                        <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 ">In today's world,
-                            customers
-                            expect businesses to
-                            be easily reachable. Venveo lets you
-                            communicate how they prefer, whether that is a call, email, chat, or just booking online.
-                            <br><br>
-                            Provide a seamless customer experience that sets you apart.
-                        </p>
-                    </div>
-                </div>
-                <div class="lg:w-6/12 w-full flex justify-center items-center">
-                    <div>
-                        <img src="./assets/images/png/spend_background.png" alt="img">
-                    </div>
+    </section>
+    <!-- ==  === -->
+    <section class="md:pb-52 pb-24">
+        <div class="flex flex-wrap lg:mt-36 md:mt-28 sm:mt-20  lg:flex-row">
+            <div class="lg:w-6/12 last:w-full flex justify-center items-center">
+                <div>
+                    <h1
+                        class="text_700_80 max-lg:text-center text_60 text_40 max-lg:px-5 max-lg:text-7xl max-md:text-6xl max-sm:text-5xl SohneSchmalBold leading-[86%]">
+                        Make it easy for
+                        <span class="block lg-unset"> your customers </span>
+                    </h1>
+                    <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 text_400_15 text_12">In
+                        today's world,
+                        customers
+                        expect businesses to
+                        be easily reachable. Venveo lets you
+                        communicate how they prefer, whether that is a call, email, chat, or just booking online.
+                        <br><br>
+                        Provide a seamless customer experience that sets you apart.
+                    </p>
                 </div>
             </div>
-        </section>
+            <div class="lg:w-6/12 w-full flex justify-center items-center">
+                <div>
+                    <img src="./assets/images/png/spend_background.png" alt="img">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- body -->
     <!-- book more jobs -->
     <section class="bg-Ocean relative ">
-        <img class="absolute -z-10 md:-top-56 -top-44  -translate-x-1/2 left-1/2 lg:max-w-[389px] md:max-w-[340px] max-w-[300px]"
+        <img class="absolute -z-10 md:-top-56 sm:-top-44 -top-28  -translate-x-1/2 left-1/2 lg:max-w-[389px] md:max-w-[340px] max-w-[200px]"
             src="./assets/images/svg/half_circle.svg" alt="half">
         <div>
             <div class="text-center md:pb-20 pb-12 md:pt-28 pt-20">
