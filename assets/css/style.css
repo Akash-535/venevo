@@ -177,6 +177,40 @@
   display: flex;
   gap: 40px;
 }
+/* ==footer== */
+.marekting_bg_img {
+  background-image: url(/assets/images/png/marketing_card_img_1.png);
+  background-repeat: no-repeat;
+  height: 551px;
+  align-items: last baseline;
+  display: flex;
+  background-size: cover;
+  object-fit: cover;
+}
+.marekting_bg_img_2 {
+  background-image: url(/assets/images/png/marketing_card_img_2.png);
+  background-repeat: no-repeat;
+  height: 551px;
+  align-items: last baseline;
+  display: flex;
+  background-size: cover;
+  object-fit: cover;
+}
+.marekting_bg_img_3 {
+  background-image: url(/assets/images/png/marketing_card_img_3.png);
+  background-repeat: no-repeat;
+
+  /* max-width: 440px; */
+  height: 551px;
+  align-items: last baseline;
+  display: flex;
+  background-size: cover;
+  object-fit: cover;
+}
+.email_text {
+  border: none;
+  background: transparent;
+}
 @media (max-width: 992px) {
   /* font size 80 */
   .text_60 {
@@ -197,6 +231,17 @@
   /* font size 20 */
   .text_16 {
     font-size: 16px !important;
+  }
+  .d_none_md {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .footer_links_parent {
+    display: none !important;
+  }
+  .sm_reverse_col {
+    flex-direction: column-reverse !important;
   }
 }
 @media (max-width: 576px) {
