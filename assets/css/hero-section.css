@@ -94,18 +94,13 @@
 .Sohne-SchmalExtraBold {
     font-family: SohneSchmalExtraBold;
 }
-
-.hiden-rotate {
+.show-line{
+    transform: rotate(45deg);
+}
+.show-line::after{
+    top: 0 !important;
     transform: rotate(90deg);
-    display: none;
 }
-
-.show-rotate {
-    display: block !important;
-    transform: rotate(180deg);
-
-}
-
 /* common class */
 .text_400_15 {
     font-weight: 400;
