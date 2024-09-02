@@ -7,12 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/images/svg/Venveologo.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <title>Venveo</title>
+    <style>
+
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -44,38 +46,40 @@
 
 <body>
     <!-- header -->
-    <section class="relative overflow-hidden pb-52">
-        <img class="absolute hidden lg:block right-[0%] top-[20%] z-30" src="./assets/images/png/bg-layer.png" alt="">
+    <section class="relative overflow-hidden lg:pb-32 pb-0">
+        <img class="absolute hidden lg:block right-[0%] top-[27%] z-30" src="./assets/images/webp/bg-layer.webp" alt="">
         <div class="flex items-center justify-between  ">
             <a class="translate-y-8 ml-12" href="#">
                 <img src="./assets/images/svg/Venveologo.svg" alt="Logo">
             </a>
-            <div onclick="navmanu()" class="hidden relative mr-12 z-50  ml-auto max-lg:block">
-                <svg id="navclick" class=" transition-all duration-700" width="40" height="40" viewBox="0 0 40 40"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M35.5566 14L4.44394 14" stroke="black" stroke-width="2" stroke-linecap="round" />
-                    <path d="M35.5566 26L4.44394 26" stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
-
-                <svg id="show" class="hidden transition-all duration-500 " width="24" height="24" viewBox="0 0 24 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L23 23" stroke="black" stroke-width="2" stroke-linecap="round" />
-                    <path d="M23 1L0.999999 23" stroke="black" stroke-width="2" stroke-linecap="round" />
-                </svg>
+            <div onclick="navMenu()"
+                class="hidden cursor-pointer    relative mr-12 z-50  h-5 justify-end flex-col   ml-auto max-lg:flex">
+                <span id="navline"
+                    class="w-10  transition-all duration-300 cursor-pointer h-0.5 bg-black flex relative after:absolute after:left-0 after:w-10 after:bg-black after:h-0.5 after:-top-5"></span>
 
             </div>
             <div id="mobile-viwe"
                 class="flex ml-auto transition-all duration-700 max-lg:fixed max-lg:w-full  z-40    max-lg:h-full max-lg:justify-center max-lg:items-center max-lg:bg-white max-lg:-top-full items-center ">
-                <div class="flex items-center   lg:flex-row flex-col gap-10">
+                <div class="flex items-center   lg:flex-row flex-col gap-10 ">
                     <ul class="flex  lg:flex-row flex-col items-center   gap-10">
-                        <li class="list-none"><a href="#">How We Help ▼</a></li>
-                        <li class="list-none"><a href="#">Who We Help ▼</a></li>
-                        <li class="list-none"><a href="#">Why Venveo ▼</a></li>
-                        <li class="list-none"><a href="#">Resources</a></li>
-                        <li class="list-none"><a href="#"><img src="./assets/images/svg/SearchIcon.svg"
-                                    alt="secarch"></a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime   "
+                                href="#">How We Help ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime   "
+                                href="#">Who We Help ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime    "
+                                href="#">Why Venveo ▼</a></li>
+                        <li class="list-none"><a
+                                class="relative text_500_15 text_12 after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime    "
+                                href="#">Resources</a></li>
+                        <li class="list-none"><a href="#"><img
+                                    class="hover:scale-125 transition-all duration-300 hover:rotate-[360deg]"
+                                    src="./assets/images/svg/SearchIcon.svg" alt="secarch"></a></li>
                     </ul>
-                    <button class="flex bg-lemonLime  items-center gap-1 py-8 px-8">
+                    <button
+                        class="flex bg-lemonLime hover:bg-yellowGreen transition-all duration-300  items-center gap-1 py-10 px-8 text_600_15 text_12 ">
                         Let’s Talk<svg width="29" height="10" viewBox="0 0 29 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M23.2812 1L27.2412 4.96L23.2812 8.92" stroke="black" stroke-width="2"
@@ -92,9 +96,9 @@
             <div>
                 <div class="flex-wrap  flex flex-col lg:flex-row">
                     <div class="lg:w-5/12 flex items-center mx-auto pl-[4%] pr-[4%]  xl:pr-[6%] pt-14 lg:pt-0">
-                        <div>
-                            <p class="mb-0 max-lg:px-5 text-pacificBlue text_600_15">
-                                Who We Help
+                        <div class="max-lg:pb-5">
+                            <p class="mb-3 max-lg:px-5 text-pacificBlue text_600_15 text_12">
+                                WHO WE HELP
                             </p>
                             <h1
                                 class="text-xxl max-lg:px-5 max-lg:text-8xl max-md:text-7xl max-sm:text-5xl  leading-[86%]  SohneSchmalBold mb-0">
@@ -103,7 +107,7 @@
                             </h1>
                             <p id="Rank-text" class="mb-0 min-h-44 MaisonNeueMonoNormal max-lg:px-5 py-11"></p>
                             <button
-                                class="flex  MaisonNeueSemibold bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center max-lg:p-7 max-md:p-5 py-8 px-8">
+                                class="flex text_15_600 text_12  MaisonNeueSemibold bg-lemonLime gap-2 hover:scale-110 transition-all duration-300 items-center max-lg:p-7 max-md:p-5 py-8 px-8">
                                 Book a Strategy Call<svg width="29" height="10" viewBox="0 0 29 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.2812 1L27.2412 4.96L23.2812 8.92" stroke="black" stroke-width="2"
@@ -116,14 +120,16 @@
                     </div>
                     <div class="lg:w-7/12 min-h-[800px] relative bg-yellowGreen pt-[71px] pl-[76px]">
                         <div>
-                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30">“They
+                            <p class="mb-0 max-w-[364px] max-lg:w-full max-lg:px-5 MaisonNeueLight text_300_30 text_18">
+                                “They
                                 are really
                                 aligned with how
                                 we are building
                                 the business
                                 from a strategic
                                 standpoint and from branding, messaging and cultural standpoint.”</p>
-                            <p class="mb-0 text_400_15 max-lg:px-5 MaisonNeueMonoNormal mt-5">Jon Vaughan,
+                            <p class="mb-0 text_400_15 max-lg:px-5 MaisonNeueMonoNormal mt-5 text_400_15 text_12">Jon
+                                Vaughan,
                                 <span class="block"> REGIONAL VP-SE AT US LBM </span>
                             </p>
                             <svg class="mt-5" width="49" height="40" viewBox="0 0 49 40" fill="none"
@@ -145,8 +151,8 @@
                                     fill="black" />
                             </svg>
 
-                            <img class="absolute z-40 bottom-0 right-0" src="./assets/images/png/herosection_img.png"
-                                alt="img">
+                            <img class="absolute z-[39] bottom-0 right-0"
+                                src="./assets/images/webp/herosection_img.webp" alt="img">
                         </div>
                     </div>
 
@@ -155,21 +161,24 @@
         </div>
 
 
-        <div><img class="w-full mt-[76px]" src="./assets/images/png/yellow-waves.png" alt="wave"></div>
+        <div><img class=" mt-[76px] w-full" src="./assets/images/webp/yellow-waves.webp" alt="wave"></div>
         <div class="flex-col flex-wrap lg:flex-row lg:mt-24 md:mt-20 sm:mt-16 flex">
-            <div data-aos="flip-left" data-aos-duration="2000" class="lg:w-6/12 w-full">
+            <div class="lg:w-6/12 w-full">
                 <div class="relative">
-                    <img class="w-full relative z-10" src="./assets/images/png/marketing-img.avif" alt="img">
+                    <img class="w-full relative z-10" src="./assets/images/webp/marketing-img.webp" alt="img">
                     <img class="absolute bottom-[-20%] lg:block hidden right-[-20%]"
-                        src="./assets/images/png/4circle.png" alt="forcricle">
+                        src="./assets/images/webp/4circle.webp" alt="four circle">
                 </div>
             </div>
-            <div data-aos="flip-right" class="lg:w-6/12 w-full relative z-40 justify-center items-center flex">
+            <div class="lg:w-6/12 w-full relative z-40 justify-center items-center flex">
                 <div class="w-[433px] max-lg:w-full relative z-10  mx-auto">
-                    <h1 class="text-[80px] SohneSchmalBold max-lg:px-5 leading-[86%]">ALL-IN-ONE <span class="block">
+                    <h1
+                        class="text_700_80 text_60 text_40 SohneSchmalBold max-lg:px-5 max-lg:text-center leading-[86%]">
+                        ALL-IN-ONE <span class="block">
                             MARKETING
                         </span></h1>
-                    <p class="MaisonNeueMonoNormal max-lg:px-5 text_400_15  mt-4">Transform your home service business
+                    <p class="MaisonNeueMonoNormal max-lg:px-5 text_400_15 text_12 mt-4">Transform your home service
+                        business
                         with Venveo.
                         Our comprehensive
                         strategy includes a great
@@ -181,37 +190,39 @@
                 </div>
             </div>
         </div>
-        <section>
-            <div class="flex flex-wrap lg:mt-36 md:mt-28 sm:mt-20  lg:flex-row">
-                <div class="lg:w-6/12 last:w-full flex justify-center items-center">
-                    <div>
-                        <h1
-                            class="text-[80px] max-lg:px-5 max-lg:text-7xl max-md:text-6xl max-sm:text-5xl SohneSchmalBold leading-[86%]">
-                            Make it easy for
-                            <span class="block lg-unset"> your customers </span>
-                        </h1>
-                        <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 ">In today's world,
-                            customers
-                            expect businesses to
-                            be easily reachable. Venveo lets you
-                            communicate how they prefer, whether that is a call, email, chat, or just booking online.
-                            <br><br>
-                            Provide a seamless customer experience that sets you apart.
-                        </p>
-                    </div>
-                </div>
-                <div class="lg:w-6/12 w-full flex justify-center items-center">
-                    <div>
-                        <img src="./assets/images/png/spend_background.png" alt="img">
-                    </div>
+    </section>
+    <!-- ==  === -->
+    <section class="md:pb-52 pb-24">
+        <div class="flex flex-wrap lg:mt-36 md:mt-28 sm:mt-20  lg:flex-row">
+            <div class="lg:w-6/12 last:w-full flex justify-center items-center">
+                <div>
+                    <h1
+                        class="text_700_80 max-lg:text-center text_60 text_40 max-lg:px-5 max-lg:text-7xl max-md:text-6xl max-sm:text-5xl SohneSchmalBold leading-[86%]">
+                        Make it easy for
+                        <span class="block lg-unset"> your customers </span>
+                    </h1>
+                    <p class="MaisonNeueMonoNormal w-[433px] max-lg:w-full max-lg:px-5 mt-4 text_400_15 text_12">In
+                        today's world,
+                        customers
+                        expect businesses to
+                        be easily reachable. Venveo lets you
+                        communicate how they prefer, whether that is a call, email, chat, or just booking online.
+                        <br><br>
+                        Provide a seamless customer experience that sets you apart.
+                    </p>
                 </div>
             </div>
-        </section>
+            <div class="lg:w-6/12 w-full flex justify-center items-center">
+                <div>
+                    <img src="./assets/images/webp/spend_background.webp" alt="img">
+                </div>
+            </div>
+        </div>
     </section>
     <!-- body -->
     <!-- book more jobs -->
     <section class="bg-Ocean relative ">
-        <img class="absolute -z-10 md:-top-56 -top-44  -translate-x-1/2 left-1/2 lg:max-w-[389px] md:max-w-[340px] max-w-[300px]"
+        <img class="absolute -z-10 md:-top-56 sm:-top-44 -top-28  -translate-x-1/2 left-1/2 lg:max-w-[389px] md:max-w-[340px] max-w-[200px]"
             src="./assets/images/svg/half_circle.svg" alt="half">
         <div>
             <div class="text-center md:pb-20 pb-12 md:pt-28 pt-20">
@@ -236,7 +247,7 @@
                                 Working Together
                             </h3>
                             <div class="relative">
-                                <img id="akshatImg" class="  pb-1.5" src="./assets/images/png/video_img_1.png"
+                                <img id="akshatImg" class="  pb-1.5" src="./assets/images/webp/video_img_1.webp"
                                     alt="img">
                                 <button id="akshatOpen"
                                     class="bg-red-500 p-5 max-lg:p-3 max-sm:p-2 rounded-full absolute bottom-8 right-[5%] max-md:bottom-4 ">
@@ -264,7 +275,7 @@
                         </div>
                     </div>
                     <div class="layer">
-                        <img class="absolute bottom-0 max-w-[990px] right-0" src="./assets/images/png/layer2.png"
+                        <img class="absolute bottom-0 max-w-[990px] right-0" src="./assets/images/webp/layer2.webp"
                             alt="img">
                     </div>
                 </div>
@@ -344,14 +355,14 @@
         <div class="row pt-3 flex lg:flex-row flex-col">
             <div class="lg:w-6/12">
                 <div class="relative">
-                    <img id="videoImg" class="" src="./assets/images/png/akshat_img.png" alt="img">
+                    <img id="videoImg" class="" src="./assets/images/webp/akshat_img.webp" alt="img">
                     <button id="videoPlay"
                         class="bg-red-500 px-7 py-4  max-md:px-6 rounded-full absolute bottom-8  right-[5%] max-md:bottom-4 max-lg:right-[28%] max-md:right-[5%]">
                         <img class="w-full max-lg:w-3" src="./assets/images/svg/play_btn.svg" alt="btn"></button>
                     <button id="closeVideo"
                         class="hidden text-white p-1 max-lg:p-2 max-sm:p-1 rounded-md absolute top-3 right-16">close</button>
                     <img class="absolute -bottom-20 -right-28 max-lg:right-44 max-md:right-0 -z-10 max-md:max-w-[200px]"
-                        src="./assets/images/png/4circle.png" alt="circle">
+                        src="./assets/images/webp/4circle.webp" alt="circle">
                 </div>
             </div>
             <div class="lg:w-6/12 flex justify-center items-center flex-col p-4">
@@ -406,7 +417,8 @@
                         <div class="md:w-6/12">
                             <div class="relative">
                                 <!-- Unique ID for image and buttons -->
-                                <img id="image1" class="max-sm:max-w-60" src="./assets/images/png/a_girl.png" alt="img">
+                                <img id="image1" class="max-sm:max-w-60" src="./assets/images/webp/a_girl.webp"
+                                    alt="img">
                                 <button id="playBtn1"
                                     class="bg-red-500 p-5 max-lg:p-3 max-sm:p-2 rounded-full absolute bottom-8 right-[25%] max-lg:bottom-3 max-lg:right-[7%] max-md:right-[10%]">
                                     <img class="max-lg:w-3 max-md:w-2 max-sm:w-1" src="./assets/images/svg/play_btn.svg"
@@ -444,7 +456,8 @@
                         <div class="md:w-6/12">
                             <div class="relative">
 
-                                <img id="image2" class="max-sm:max-w-60" src="./assets/images/png/a_girl.png" alt="img">
+                                <img id="image2" class="max-sm:max-w-60" src="./assets/images/webp/a_girl.webp"
+                                    alt="img">
                                 <button id="playBtn2"
                                     class="bg-red-500 p-5 max-lg:p-3 max-sm:p-2 rounded-full absolute bottom-8 right-[25%] max-lg:bottom-3 max-lg:right-[7%] max-md:right-[10%]">
                                     <img class="max-lg:w-3 max-md:w-2 max-sm:w-1" src="./assets/images/svg/play_btn.svg"
@@ -475,7 +488,8 @@
                         <div class="md:w-6/12">
                             <div class="relative">
 
-                                <img id="image3" class="max-sm:max-w-60" src="./assets/images/png/a_girl.png" alt="img">
+                                <img id="image3" class="max-sm:max-w-60" src="./assets/images/webp/a_girl.webp"
+                                    alt="img">
                                 <button id="playBtn3"
                                     class="bg-red-500 p-5 max-lg:p-3 max-sm:p-2 rounded-full absolute bottom-8 right-[25%] max-lg:bottom-3 max-lg:right-[7%] max-md:right-[10%]">
                                     <img class="max-lg:w-3 max-md:w-2 max-sm:w-1" src="./assets/images/svg/play_btn.svg"
@@ -507,12 +521,12 @@
 
 
         <div class="layer">
-            <img class="absolute md:max-w-[1320px]  bottom-0 right-0  mx-auto" src="./assets/images/png/layer2.png"
+            <img class="absolute md:max-w-[1320px]  bottom-0 right-0  mx-auto" src="./assets/images/webp/layer2.webp"
                 alt="layer">
         </div>
     </section>
     <!-- who we help -->
-    <section>
+    <section class="pb-3">
         <div class="container">
             <div class="head text-center md:pb-20 pb-10 md:pt-40 pt-20">
                 <p class="text_300_30 text_18 MaisonNeueLight">Helping Businesses Reach Their Goals</p>
@@ -557,8 +571,399 @@
             </div>
         </div>
         <div class="bottom_line md:pt-28 pt-14">
-            <img src="./assets/images/png/wave.png" alt="wave">
+            <img class="w-full" src="./assets/images/webp/wave.webp" alt="wave">
         </div>
+    </section>
+
+    <!-- footer -->
+    <section class=" md:pt-20 pt-12">
+        <div class="max-w-[1440px] mx-auto max-sm:px-4">
+            <p class="text-center text_600_15 text_12 text-pacificBlue">Resources</p>
+            <p class="text-center text_700_80  mx-auto text_60 text_40 mb-6 ">marketing tips for
+                <span class="block"> your business </span></p>
+            <div
+                class="three-cards flex lg:flex-row max-md:flex-wrap  md:gap-16 gap-4 max-md:items-center justify-center mx-5 max-lg:flex-wrap">
+                <div class="md:w-4/12  sm:w-6/12 marekting_bg_img px-5 pb-7 max-md:w-full ">
+                    <div class=" max-md:px-1">
+                        <div
+                            class="bg-white w-full rounded-3xl  max-md:py-8 max-lg:px-7    max-sm:px-3 max-sm:py-3  py-8 px-7">
+                            <div class="flex-col">
+                                <p class="text-pacificBlue text_600_15 MaisonNeueSemibold ">multi-channel marketing</p>
+                                <p class="text_300_30 pt-4 md:min-h-20 MaisonNeueLight text_18">How to Get Your Product
+                                    into Lowe's</p>
+                                <p class="text_400_15 pt-4 MaisonNeueMonoNormal text_12">Understanding the process and
+                                    maximize the opportunities</p>
+                                <button class="md:pt-20 pt-10 text_600_15 gap-2 flex MaisonNeueSemibold ">Read More
+                                    <span class="mt-1"><img src="/assets/images/svg/arrow.svg"
+                                            alt="arrow"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-4/12  sm:w-6/12 marekting_bg_img_2 px-5 pb-7">
+                    <div class=" max-md:px-1">
+                        <div
+                            class="bg-white  w-full rounded-3xl  max-md:py-8 max-lg:px-7    max-sm:px-3 max-sm:py-3  py-8 px-7">
+                            <div class="flex-col">
+                                <p class="text-pacificBlue text_600_15 MaisonNeueSemibold ">lead-gen</p>
+                                <p class="text_300_30 pt-4 MaisonNeueLight text_18">Get Your Sales Team Ready for
+                                    Digital Leads</p>
+                                <p class="text_400_15 pt-4 MaisonNeueMonoNormal text_12">unlock substantial business
+                                    growth by enhancing collaboration skills and digital marketing expertise</p>
+                                <button class="pt-11 text_600_15 gap-2 flex MaisonNeueSemibold ">Read More <span
+                                        class="mt-1"><img src="/assets/images/svg/arrow.svg"
+                                            alt="arrow"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-4/12  sm:w-6/12 w-12/12 marekting_bg_img_3 px-5 pb-7">
+                    <div class="max-md:px-1">
+                        <div
+                            class="bg-white w-full rounded-3xl  max-md:py-8 max-lg:px-7  max-sm:px-3 max-sm:py-3  py-8 px-7">
+                            <div class="flex-col">
+                                <p class="text-pacificBlue text_600_15 MaisonNeueSemibold ">ecommerce</p>
+                                <p class="text_300_30 pt-4 MaisonNeueLight text_18">How to Sell Building Materials
+                                    Online</p>
+                                <p class="text_400_15 pt-4 MaisonNeueMonoNormal text_12">Explore how selling building
+                                    materials online opens up wider audiences, efficient sales and insightful data,</p>
+                                <button class="pt-10 text_600_15 gap-2 flex MaisonNeueSemibold ">Read More <span
+                                        class="mt-1"><img src="/assets/images/svg/arrow.svg"
+                                            alt="arrow"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black pt-20 relative  z-10 mt-8">
+        <div class="container ">
+            <div class="black_box_one border-solid border border-lemonLime  rounded-3xl ms-3 me-3">
+                <p class=" text-lemonLime text_300_30 text-center pt-[76px] MaisonNeueLight">How to Get Started</p>
+                <h4 class="text_700_80 text-center text-lemonLime SohneSchmalBold text_60 text_40">B2B Marketing</h4>
+                <p class="text_400_15 text-center text-white max-w-[641px] mx-auto pt-6 MaisonNeueMonoNormal text_16">
+                    Venveo has been the go-to marketing partner for home services <br>businesses for over 20 years.</p>
+                <div class=" md:px-36 sm:px-9 px-7 md:pt-14 sm:pt-8 pt-6  md:pb-16 sm:pb-9 pb-5">
+                    <p class="text-white text_300_20  max-w-[735px] md:pt-14 sm:pt-10  MaisonNeueLight text_16">No
+                        matter if you’re an electrician, roofer, or plumber, you can benefit from jumpstarting your
+                        marketing efforts and get your phone ringing. Marketing may seem like a whole new ball game
+                        you’re not ready for, but it’s easy to get started. Here’s some ways to get started.</p>
+                    <ul class="pt-11 pb-16 ps-3">
+                        <li class="list-disc text-white"><a href="#"
+                                class="text-white text_300_20 li_texts MaisonNeueLight text_16"> Is website development
+                                important? </a> </li>
+                        <li class="list-disc text-white"><a href="#"
+                                class="text-white text_300_20 li_texts MaisonNeueLight text_16"> What is search engine
+                                optimization?</a> </li>
+                        <li class="list-disc text-white"><a href="#"
+                                class="text-white text_300_20 li_texts MaisonNeueLight text_16"> What is digital
+                                advertising? </a></li>
+                        <li class="list-disc text-white"><a href="#"
+                                class="text-white text_300_20 li_texts MaisonNeueLight text_16"> Do you need to worry
+                                about social media marketing?</a> </li>
+                        <li class="list-disc text-white"><a href="#"
+                                class="text-white text_300_20 li_texts MaisonNeueLight text_16"> What is included with
+                                content marketing? </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="black_box_two pt-20 flex items-start justify-start flex-col md:px-36 sm:px-16 px-4">
+                <a href="#" class="text_600_15 text-[#00999E] MaisonNeueSemibold">Learn More</a>
+                <p class="text_700_50 text-white SohneSchmalBold text_30 text_20">Is a home services website important?
+                </p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Every person wanting to hire a <u>home
+                        services</u> contractor will first want to see a website. Why? Because it provides the customer
+                    with information about your business right off the bat. Customers want to know where you are
+                    located, where you service, what you provide, and how much it's going to cost them.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">All this information is present on a
+                    well-developed site. But it's not enough to make one, the website needs to be maintained and updated
+                    with customer reviews, testimonials, service changes, and ads or promotions you may be running. Your
+                    website will be the nervous system to your marketing efforts so make sure it's polished before
+                    diving into anything else.</p>
+            </div>
+            <div class="black_box_three pt-20 flex items-start justify-start flex-col md:px-36 sm:px-16 px-4 ">
+                <p class="text_700_50 text-white SohneSchmalBold text_30 text_20">What is home services SEO?</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Search Engine Optimization is how your
+                    <u>home services</u> business ends up at the top of the page when local customers search for the
+                    service you provide. In short, Search Engine Optimization <u>(SEO)</u> is the process of making your
+                    site more visible by including targeted keywords that algorithms need to complete inquires.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">The best way to take advantage of<u> SEO
+                        opportunities</u> without taking a deep dive into the logistical side of things is to make sure
+                    your home services business is registered under <u>Google My Business</u>, keep business location
+                    up-to-date, and include content marketing in your intro strategy.</p>
+
+            </div>
+            <div class="black_box_four pt-24 flex items-start justify-start flex-col md:px-36 sm:px-16 px-4">
+                <p class="text_700_50 text-white SohneSchmalBold text_30 text_20">What is digital advertising for home
+                    services?</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Unlike physical advertising, digital
+                    advertising is a way to build brand awareness online at half the cost and more of the reach.
+                    <u>Digital advertising</u> may seem like a method's that's only good for worldwide clothing
+                    companies, but home services businesses need to get their name out there and digital is the way to
+                    do it.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16"><u>Digital advertising</u> can be
+                    utilized locally as well as globally and if done right, will target people right in your
+                    neighborhood looking for your services. From plumbing to roofing, your ads can get in front of ideal
+                    clients on various platforms including search engines, social media platforms, and websites. Think
+                    of it as traveling billboards, but less of a cost.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Digital ads come in all shapes and sizes
+                    including banners, landing pages, popups, and flash ads to name a few. <u>Google's Local
+                        Services</u> ads are a good place to get started.</p>
+            </div>
+
+            <div class="black_box_five pt-24 flex items-start justify-start flex-col md:px-36 sm:px-16 px-4">
+                <p class="text_700_50 text-white SohneSchmalBold text_30 text_20">Do you need to worry about social
+                    media marketing?</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Home services businesses need to be just
+                    as active on <u>social media</u> as any other business because it's more important than ever to
+                    <u>engage</u> with potential customers and build your brand presence online. Word-of-mouth and
+                    occasional advertising are no longer enough in this digital age.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16"><u>Content</u> should highlight the type
+                    of services you provide, promotions you decide to offer, and educational information that your
+                    audience can benefit from. Whether you're a roofer, an electrician, or an HVAC company, <u>social
+                        media</u> is an important part of your marketing strategy.</p>
+
+            </div>
+            <div class="black_box_six pt-24 flex items-start justify-start flex-col md:px-36 sm:px-16 px-4">
+                <p class="text_700_50 text-white SohneSchmalBold text_30 text_20">What is included with content
+                    marketing?</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">Content marketing encompasses online
+                    material your company puts out. That includes blog posts, <u>videos,</u> eBooks, podcast posts,
+                    newsletters, etc. <u>Content marketing</u> puts you in a position to utilize keywords to build SEO
+                    efforts and make yourself a source of trust and knowledge.</p>
+                <p class="text_300_20 text-white pt-10 MaisonNeueLight text_16">If your website includes <u>valuable
+                        content,</u> search engine bots recognize that content and will put your page in a position
+                    where <u>local customers</u> find you first. The first step is to develop a content calendar so you
+                    know what you want to put out and when. Home services businesses are in a unique position to publish
+                    educational information that promotes trust in your company’s abilities to solve issues.</p>
+
+            </div>
+        </div>
+        <img src="/assets/images/webp/yellow-waves.webp" alt="yellow-waves"
+            class="w-full md:pt-24 sm:pt-14 pt-10 md:pb-24 sm:pb-14 pb-10">
+    </section>
+
+    <section class="overflow-hidden">
+        <div class="bg-[#00999E] flex items-center justify-center pt-24 pb-20 relative ">
+            <img src="/assets/images/webp/zick-zack.webp" alt="zickzak" class="absolute top-0 left-[-14%]">
+            <img src="/assets/images/webp/zick-zack.webp" alt="zickzak" class="absolute bottom-[-95%] ">
+            <img src="/assets/images/webp/zick-zack.webp" alt="zickzak" class="absolute top-[-50%] right-[-12%]">
+            <div class="flex items-center justify-center gap-10 sm:flex-wrap flex-wrap">
+                <p class="text_300_40 text-white MaisonNeueLight sm:text-center text-center text_25">Ready to hit your
+                    goals?</p>
+                <button
+                    class=" bg-lemonLime py-8 px-8 gap-3 flex  text_600_15 relative z-10 items-center justify-center max-sm:w-full max-sm:mx-3 hover:scale-110 transition-all duration-300  max-lg:p-7 max-md:p-5">Book
+                    a Strategy Call<span><img src="/assets/images/svg/btn-arrow.svg" alt=""
+                            class="mt-1"></span></button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-Ocean">
+        <Footer class="pt-24 pb-24 md:px-16 sm:px-9  px-5">
+            <div class="sm_footer_links md:hidden">
+                <p class="text_300_30 text-white MaisonNeueLight pb-9 text-center">Get weekly data — and insights.</p>
+                <div class="flex md:gap-20 gap-6 border-[2px] border-white rounded-full py-5 px-7 md:hidden ">
+                    <input type="text" class="email_text text-white text_400_15 outline-none w-full"
+                        placeholder="Enter Your Email" />
+                    <p class="text_600_15 text-lemonLime ">Get Started</p>
+                </div>
+                <div class="pt-20">
+                    <p class="text-base font-medium text-lemonLime">How We Help ▼</p>
+                    <ul>
+                        <li><a href="#" class="text-white text-base font-medium flex gap-4 pt-8"><img
+                                    src="/assets/images/svg/eye_footer.svg" alt="">Drive More Awareness </a></li>
+                        <li><a href="#" class="text-white text-base font-medium flex gap-4 pt-8"><img
+                                    src="/assets/images/svg/dollar_curency.svg" alt="">Get More Customers</a></li>
+                        <li><a href="#" class="text-white text-base font-medium flex gap-4 pt-8"><img
+                                    src="/assets/images/svg/tool_footer.svg" alt="">Build Your Brand</a></li>
+                        <li><a href="#" class="text-white text-base font-medium flex gap-4 pt-8"><img
+                                    src="/assets/images/svg/prrof_symbol.svg" alt="">Improve Your Reputation</a></li>
+                        <li><a href="#" class="text-white text-base font-medium flex gap-4 pt-8"><img
+                                    src="/assets/images/svg/track_.svg" alt="">Track Results</a></li>
+
+                    </ul>
+                    <p class="pt-14"> <a href="" class="text-base font-medium text-lemonLime ">Who We Help ▼</a></p>
+                    <p class="pt-10"> <a href="" class="text-base font-medium text-lemonLime ">Why Venveo ▼</a></p>
+                </div>
+
+            </div>
+            <div class="footer_links_parent flex">
+                <div class="lg:w-8/12 flex  md:w-6/12 w-6/12 sm:flex-wrap flex-wrap ">
+                    <div class="lg:w-3/12 md:w-6/12 w-full">
+                        <p class="text_500_12 text-white MaisonNeueMedium">How we help</p>
+                        <ul class="flex-col pt-6">
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Drive
+                                    More Awareness</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Get
+                                    more Customers</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Build
+                                    Your Brand</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Improve
+                                    your reputation</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Track
+                                    Results</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full">
+                        <p class="text_500_12 text-white MaisonNeueMedium">Who we help</p>
+                        <ul class="flex-col pt-6">
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Digital
+                                    Advertising</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Search
+                                    Engine Ranking</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Content
+                                    Marketing</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Programic
+                                    Advertising</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Email
+                                    Marketing</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full">
+                        <p class="text_500_12 text-white MaisonNeueMedium">Why venveo</p>
+                        <ul class="flex-col pt-6 ">
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">About
+                                    Us</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Careers</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Growth
+                                    Studies</a></li>
+                            <li><a href="#"
+                                    class="text-white text_300_15 MaisonNeueLight relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime">Testimonials</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full">
+                        <p class="text_500_12 text-white MaisonNeueMedium">Resources</p>
+                        <ul class="flex-col pt-6">
+                            <li><a href="#"
+                                    class="text-white relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime text_300_15 MaisonNeueLight">Articles</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime text_300_15 MaisonNeueLight">News</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime text_300_15 MaisonNeueLight">Webinars</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime text_300_15 MaisonNeueLight">EBooks</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-white relative  after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-0 after:left-0 after:h-0.5 after:bg-lemonLime text_300_15 MaisonNeueLight">Podcast</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-4/12  md:w-6/12 w-6/12">
+                    <p class="text_300_30 text-white MaisonNeueLight pb-9 text-center">Get weekly data — and insights.
+                    </p>
+                    <div class="flex gap-36 border-[2px] border-white rounded-full py-5 px-7">
+                        <input type="text"
+                            class="email_text text-white placeholder:text-white text_400_15 outline-none w-full"
+                            placeholder="Enter Your Email" />
+                        <button class="text_600_15 text-lemonLime whitespace-nowrap ">Get Started</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row flex flex-wrap  sm_reverse_col">
+                <div
+                    class=" gap-9 items-center md:pt-8 pt-4 md:hidden sm:text-center flex mx-auto justify-center socail_media_links ">
+                    <a href="https://www.facebook.com/" target="_blank"
+                        class="hover:-translate-y-4 transition-all duration-300"><img
+                            src="/assets/images/svg/facebook.svg" alt="facebook" class="w-6 h-6"></a>
+                    <a href="https://www.Instagram.com/" target="_blank"
+                        class="hover:-translate-y-4 transition-all duration-300"><img
+                            src="/assets/images/svg/Instagram.svg" alt="Instagram" class="w-6 h-6"></a>
+                    <a href="https://www.x.com/" target="_blank"
+                        class="hover:-translate-y-4 transition-all duration-300"><img src="/assets/images/svg/x.svg"
+                            alt="x" class="w-6 h-6"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                        class="hover:-translate-y-4 transition-all duration-300"><img
+                            src="/assets/images/svg/linkedin.svg" alt="linkedin" class="w-6 h-6"></a>
+                    <a href="https://www.Youtube.com/" target="_blank"
+                        class="hover:-translate-y-4 transition-all duration-300"><img
+                            src="/assets/images/svg/Youtube.svg" alt="Youtube" class="w-6 h-6"></a>
+                </div>
+                <div class="lg:w-4/12 md:pt-20 pt-9 max-sm:text-center text-center mx-auto">
+                    <a href="#"><img src="/assets/images/svg/Venveo-white-logo.svg" alt="logo"
+                            class="max-sm:flex max-sm:mx-auto"></a>
+                    <P class="max-w-[315px] text_400_13 text-white pt-5 MaisonNeueMonoNormal">Venveo is an award-winning
+                        digital marketing solutions provider. Since 2003.
+                        ©2023 Venveo</P>
+                </div>
+                <div
+                    class="lg:w-4/12 flex md:gap-14 gap-7 md:pt-28 pt-16 max-md:flex-col max-sm:text-center text-center mx-auto">
+                    <div class="flex-col">
+                        <p class="text-white text_500_12 MaisonNeueMedium">VISIT</p>
+                        <p class="text_400_13 text-white max-w-[228px] pt-8 MaisonNeueMonoNormal">100 N Main Street
+                            <span class="block">#201</span>
+                            Blacksburg, VA 24060</p>
+                    </div>
+                    <div class="flex-col text-center flex mx-auto">
+                        <p class="text-white text_500_12 MaisonNeueMedium">contact</p>
+                        <p class="MaisonNeueMonoNormal text_400_13 text-white pt-8 ">
+                            info@venveo.com
+                        </p>
+                        <p class="MaisonNeueMonoNormal text_400_13 text-white pt-5">1·800·123·4567</p>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:pt-28 pt-8 flex justify-center   d_none_md">
+                    <div>
+                        <div class="gap-8 flex max-md:hidden">
+                            <p class="text-white MaisonNeueMonoNormal  text_400_13">All Rights Reserved</p>
+                            <p class="text-white MaisonNeueMonoNormal  text_400_13">Privacy Policy</p>
+                        </div>
+                        <div class="flex gap-9 items-center pt-8 max-md:hidden">
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="hover:-translate-y-4 transition-all duration-300"><img
+                                    src="/assets/images/svg/facebook.svg" alt="facebook" class="w-6 h-6"></a>
+                            <a href="https://www.Instagram.com/" target="_blank"
+                                class="hover:-translate-y-4 transition-all duration-300"><img
+                                    src="/assets/images/svg/Instagram.svg" alt="Instagram" class="w-6 h-6"></a>
+                            <a href="https://www.x.com/" target="_blank"
+                                class="hover:-translate-y-4 transition-all duration-300"><img
+                                    src="/assets/images/svg/x.svg" alt="x" class="w-6 h-6"></a>
+                            <a href="https://www.linkedin.com/" target="_blank"
+                                class="hover:-translate-y-4 transition-all duration-300"><img
+                                    src="/assets/images/svg/linkedin.svg" alt="linkedin" class="w-6 h-6"></a>
+                            <a href="https://www.Youtube.com/" target="_blank"
+                                class="hover:-translate-y-4 transition-all duration-300"><img
+                                    src="/assets/images/svg/Youtube.svg" alt="Youtube" class="w-6 h-6"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-4/12 md:pt-28 pt-16 md:hidden sm:text-center flex mx-auto items-center justify-center flex-col">
+                <div class="gap-8 flex">
+                    <p class="text-white MaisonNeueMonoNormal  text_400_13">All Rights Reserved</p>
+                    <p class="text-white MaisonNeueMonoNormal  text_400_13">Privacy Policy</p>
+                </div>
+
+            </div>
+        </Footer>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -570,7 +975,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
     </script>
     <script src="./assets/js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
