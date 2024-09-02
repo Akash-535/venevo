@@ -9,7 +9,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "MaisonNeueMedium";
   src: url("https://www.venveo.com/dist/fonts/MaisonNeueMedium/font.woff")
@@ -21,7 +20,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "MaisonNeueLight";
   src: url("https://www.venveo.com/dist/fonts/MaisonNeueLightItalic/font.woff")
@@ -33,7 +31,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "MaisonNeueSemibold";
   src: url("https://www.venveo.com/dist/fonts/MaisonNeueDemi/font.woff")
@@ -45,7 +42,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "MaisonNeueMonoNormal";
   src: url("https://www.venveo.com/dist/fonts/MaisonNeueMonoRegular/font.woff")
@@ -57,7 +53,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "SohneSchmalBold";
   src: url("https://www.venveo.com/dist/fonts/sohne-schmal/soehne-schmal-dreiviertelfett.woff2")
@@ -67,7 +62,6 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "SohneSchmalExtraBold";
   src: url("https://www.venveo.com/dist/fonts/sohne-schmal/sohne-schmal-fett.woff2")
@@ -77,31 +71,24 @@
   font-stretch: normal;
   font-display: swap;
 }
-
 .MaisonNeueBold {
   font-family: MaisonNeueBold;
 }
-
 .MaisonNeueMedium {
   font-family: MaisonNeueMedium;
 }
-
 .MaisonNeueLight {
   font-family: MaisonNeueLights;
 }
-
 .MaisonNeueSemibold {
   font-family: MaisonNeueSemibold;
 }
-
 .MaisonNeueMonoNormal {
   font-family: MaisonNeueMonoNormal;
 }
-
 .SohneSchmalBold {
   font-family: SohneSchmalBold;
 }
-
 .Sohne-SchmalExtraBold {
   font-family: SohneSchmalExtraBold;
 }
